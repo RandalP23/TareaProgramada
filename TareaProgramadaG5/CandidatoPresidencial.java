@@ -1,33 +1,70 @@
 
-/**
- * Write a description of class CandidatoPresidencial here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class CandidatoPresidencial
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class CandidatoPresidencial
-     */
-    public CandidatoPresidencial()
-    {
-        // initialise instance variables
-        x = 0;
+    private int numeroCedula;
+    private String nombreCandidato;
+    private PartidoPolitico partido;
+    private int edad;
+    private int cantidadVotos;
+    private String nacionalidad; //Nos sirve para luego en el sistema
+    //De las eleccionas validar la nacionalidad
+    
+    //Atributos
+    
+    public CandidatoPresidencial(int numeroCedula, String nombre, 
+    PartidoPolitico partido, int edad, String nacionalidad){
+        this.nacionalidad = nacionalidad;
+        this.cantidadVotos = 0;
+        this.numeroCedula = numeroCedula;
+        this.nombreCandidato = nombre;
+        this.edad = edad;
+        this.partido = partido;
+    } //Constructor
+    
+    //getters 
+    
+    public int getNumeroCedula (){
+        return numeroCedula;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    
+    public String getNombreCandidato (){
+        return nombreCandidato;
     }
+    
+    public int getEdad(){
+        return edad;
+    }
+    
+    public int getCantidadVotos(){
+        return cantidadVotos;
+    }
+    
+    public String getNacionalidad(){
+        return nacionalidad;
+    }
+    
+    public PartidoPolitico getPartido(){
+        return partido;
+    }
+    
+    //Fin getters
+    
+    //Setters 
+    
+    public void setPartido(PartidoPolitico nuevoPartido){
+      partido = nuevoPartido;
+    }
+    
+    public void setVotos(int votos){
+        cantidadVotos = votos;
+    }
+    
+    public void setEdad (int nuevaEdad){
+        edad = nuevaEdad;
+    }
+    
+    public void setNombre(String nuevoNombre){
+        nombreCandidato = nuevoNombre;
+    }
+    //Fin setters 
 }

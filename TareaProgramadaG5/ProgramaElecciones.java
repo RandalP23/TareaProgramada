@@ -1,33 +1,37 @@
 
-/**
- * Write a description of class ProgramaElecciones here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import javax.swing.JOptionPane;
 public class ProgramaElecciones
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    public void abrirMenu(){
+        int opcion = 0;
+        
+        do{
+            opcion = Integer.parseInt(JOptionPane.showInputDialog(
+            "Menu Principal\n" + "Digite el numero segun la opcion deseada\n"
+            + "1. Incluir un partido\n" + "2. Incluir un candidato\n" +
+            "3. Incluir un votante\n" + "4. Registrar un Voto\n" + "5. Salir")
+            );
+            
+            switch(opcion){
+                case 1: 
+                    JOptionPane.showMessageDialog(null, "En construcción");
+                    break;
+                case 2: 
+                    JOptionPane.showMessageDialog(null, "En construcción");
+                    break;
+                case 3: 
+                    JOptionPane.showMessageDialog(null, "En construcción");
+                    break;
+                case 4: 
+                    JOptionPane.showMessageDialog(null, "En construcción");
+                    break;   
+                case 5: 
+                    JOptionPane.showMessageDialog(null, "Cerrando menu");
+                    break;
+                default: 
+                    JOptionPane.showMessageDialog(null, "Opcion invalida");
 
-    /**
-     * Constructor for objects of class ProgramaElecciones
-     */
-    public ProgramaElecciones()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+            }
+    } while (opcion != 5);
+}
 }

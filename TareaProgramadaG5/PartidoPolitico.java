@@ -40,23 +40,24 @@ public class PartidoPolitico
     //Fin de los metodos getters
     
     //Metodos setters
-    public void setNombrePartido (String nuevoNombre){
-        nombrePartido = nuevoNombre;
+    public void setNombrePartido (String nombrePartido){
+        this.nombrePartido = nombrePartido;
     }
     
-    public void setCedulaJuridica(int ){
-        return cedulaJuridica;
+    public void setCedulaJuridica(int cedulaJuridica){
+        this.cedulaJuridica = cedulaJuridica;
     }
     
-    public void setColoresBandera(){
-        return coloresBandera;
+    public void setColoresBandera(String coloresBandera){
+        this.coloresBandera = coloresBandera;
     }
     
-    public void setPresidenteEjecutivo(){
-        return presidenteEjecutivo;
+    public void setPresidenteEjecutivo(String presidenteEjecutivo){
+        this.presidenteEjecutivo = presidenteEjecutivo;
     }
     
-    public void setCorreoElectronico(){
-        return correoElectronico;
+    public void setCorreoElectronico(String correoElectronico){
+        this.correoElectronico = correoElectronico;
     }
+    //Fin metodos setters
 }
