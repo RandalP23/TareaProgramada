@@ -12,4 +12,6 @@ public class PadronElectoral
  public int getCantidadVotantes(){
      return cantidadVotantes;
  }
+ 
+ //Esta clase aun no la podemos trabajar mucho con la materia vista
 }

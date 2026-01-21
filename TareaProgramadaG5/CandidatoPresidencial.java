@@ -1,34 +1,40 @@
 
 public class CandidatoPresidencial
 {
-    private int numeroCedula;
-    private String nombreCandidato;
+    private int cedula;
+    private String nombre;
     private PartidoPolitico partido;
     private int edad;
     private int cantidadVotos;
-    private String nacionalidad; //Nos sirve para luego en el sistema
+    private String nacionalidad; 
+    private String correo;
+    //Nos sirve para luego en el sistema
     //De las eleccionas validar la nacionalidad
     
     //Atributos
     
     public CandidatoPresidencial(int numeroCedula, String nombre, 
-    PartidoPolitico partido, int edad, String nacionalidad){
+    PartidoPolitico partido, int edad, String nacionalidad, String correo){
+        this.correo = correo;
         this.nacionalidad = nacionalidad;
         this.cantidadVotos = 0;
-        this.numeroCedula = numeroCedula;
-        this.nombreCandidato = nombre;
+        this.cedula = numeroCedula;
+        this.nombre = nombre;
         this.edad = edad;
         this.partido = partido;
     } //Constructor
     
     //getters 
-    
-    public int getNumeroCedula (){
-        return numeroCedula;
+    public String getCorreo(){
+        return correo;
     }
     
-    public String getNombreCandidato (){
-        return nombreCandidato;
+    public int getNumeroCedula (){
+        return cedula;
+    }
+    
+    public String getNombre (){
+        return nombre;
     }
     
     public int getEdad(){
@@ -55,16 +61,28 @@ public class CandidatoPresidencial
       partido = nuevoPartido;
     }
     
-    public void setVotos(int votos){
-        cantidadVotos = votos;
-    }
-    
     public void setEdad (int nuevaEdad){
         edad = nuevaEdad;
     }
     
     public void setNombre(String nuevoNombre){
-        nombreCandidato = nuevoNombre;
+        nombre = nuevoNombre;
     }
+    
+    public void setNacionalidad(String nuevaNacionalidad){
+        nacionalidad = nuevaNacionalidad;
+    }
+    
+    public void setCorreo(String nuevoCorreo){
+        correo = nuevoCorreo;
+    }
+    //No se hace set votos por que no pueden ser modificador, luego se crearan metodos para agregar votos
     //Fin setters 
+    
+    public String toString(){
+        return "Nombre: " + nombre + ", Cedula: " + cedula +
+        ", Partido Politico: " + partido + ", Edad: " + edad +
+        ", Correo Electronico: " + correo + ", Nacionalidad: " + nacionalidad + 
+        ", Cantidad votos: " + cantidadVotos;
+    }
 }

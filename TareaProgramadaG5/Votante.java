@@ -7,12 +7,16 @@ public class Votante
     private int edad;
     private String domicilioElectoral;
     private boolean emitioVoto;
+    private String correo;
+    
+    //Usamos correo en todos como contacto, ya que el telefono es mas privado 
     
     //Atributos
     
     public Votante(String nombre, int cedula, String domicilioElectoral,
-    int edad){
-        this.emitioVoto = false;
+    int edad, String correo){
+        this.correo = correo;
+        this.emitioVoto = false; //Pues en un inicio nadie ha votado
         this.edad = edad;
         this.nombre = nombre;
         this.cedula = cedula;
@@ -20,6 +24,10 @@ public class Votante
     } //Constructor
     
     //Getters 
+    
+    public String getCorreo(){
+        return correo;
+    }
     
     public String getNombre(){
         return nombre;
@@ -59,5 +67,16 @@ public class Votante
     public void setEmitioVoto(boolean emitioVoto){
         this.emitioVoto = emitioVoto;
     }
+    
+    public void setCorreo(String nuevoCorreo){
+        correo = nuevoCorreo;
+    }
     //Fin setters
+    
+    public String toString(){
+        return "Nombre: " + nombre + ", Cedula: " + cedula +
+        ", Edad: " + edad + ", Correo Electronico: " + correo + 
+        ", Domicilio Electoral: " + domicilioElectoral + 
+        ", Emitio voto: " + emitioVoto;
+    }
 }

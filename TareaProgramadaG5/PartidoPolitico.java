@@ -44,10 +44,6 @@ public class PartidoPolitico
         this.nombrePartido = nombrePartido;
     }
     
-    public void setCedulaJuridica(int cedulaJuridica){
-        this.cedulaJuridica = cedulaJuridica;
-    }
-    
     public void setColoresBandera(String coloresBandera){
         this.coloresBandera = coloresBandera;
     }
@@ -60,4 +56,10 @@ public class PartidoPolitico
         this.correoElectronico = correoElectronico;
     }
     //Fin metodos setters
+    
+    public String toString(){
+        return "Partido: " + nombrePartido + ", Cedula Juridica: " + cedulaJuridica +
+        ", Colores de la Bandera: " + coloresBandera + ", Presidente Ejecutivo: " + presidenteEjecutivo +
+        ", Correo Electronico: " + correoElectronico;
+    } //Metodo toString 
 }

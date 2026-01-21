@@ -1,9 +1,9 @@
 #BlueJ package file
-dependency1.from=CandidatoPresidencial
-dependency1.to=PartidoPolitico
+dependency1.from=PadronElectoral
+dependency1.to=Votante
 dependency1.type=UsesDependency
-dependency2.from=PadronElectoral
-dependency2.to=Votante
+dependency2.from=CandidatoPresidencial
+dependency2.to=PartidoPolitico
 dependency2.type=UsesDependency
 editor.fx.0.height=736
 editor.fx.0.width=1382
