@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=ListaPartido
+comment1.params=
+comment1.target=void\ agregarPartido()
+comment2.params=partido
+comment2.target=void\ insertarPartido(PartidoPolitico)
+comment3.params=
+comment3.target=void\ cargarInfoPartidos()
+comment4.params=id
+comment4.target=PartidoPolitico\ buscarPartido(int)
+numComments=5

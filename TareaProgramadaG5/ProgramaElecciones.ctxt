@@ -1,5 +1,13 @@
 #BlueJ class context
 comment0.target=ProgramaElecciones
 comment1.params=
-comment1.target=void\ abrirMenu()
-numComments=2
+comment1.target=ProgramaElecciones()
+comment2.params=
+comment2.target=void\ abrirMenu()
+comment3.params=
+comment3.target=void\ registrarVoto()
+comment4.params=
+comment4.target=void\ mostrarResultados()
+comment5.params=nodo\ totalVotos
+comment5.target=void\ mostrarResultadosRec(NodoArbol,\ int)
+numComments=6

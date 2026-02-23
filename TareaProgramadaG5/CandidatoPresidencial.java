@@ -3,7 +3,7 @@ public class CandidatoPresidencial
 {
     private int cedula;
     private String nombre;
-    private PartidoPolitico partido;
+    private int IdPartido;
     private int edad;
     private int cantidadVotos;
     private String nacionalidad; 
@@ -14,14 +14,14 @@ public class CandidatoPresidencial
     //Atributos
     
     public CandidatoPresidencial(int numeroCedula, String nombre, 
-    PartidoPolitico partido, int edad, String nacionalidad, String correo){
+    int partido, int edad, String nacionalidad, String correo){
         this.correo = correo;
         this.nacionalidad = nacionalidad;
         this.cantidadVotos = 0;
         this.cedula = numeroCedula;
         this.nombre = nombre;
         this.edad = edad;
-        this.partido = partido;
+        this.IdPartido = partido;
     } //Constructor
     
     //getters 
@@ -49,16 +49,16 @@ public class CandidatoPresidencial
         return nacionalidad;
     }
     
-    public PartidoPolitico getPartido(){
-        return partido;
+    public int getPartido(){
+        return IdPartido;
     }
     
     //Fin getters
     
     //Setters 
     
-    public void setPartido(PartidoPolitico nuevoPartido){
-      partido = nuevoPartido;
+    public void setPartido(int nuevoPartido){
+      IdPartido = nuevoPartido;
     }
     
     public void setEdad (int nuevaEdad){
@@ -76,12 +76,16 @@ public class CandidatoPresidencial
     public void setCorreo(String nuevoCorreo){
         correo = nuevoCorreo;
     }
+    
+    public void agregarVoto(){
+        this.cantidadVotos = cantidadVotos + 1;
+    }
     //No se hace set votos por que no pueden ser modificador, luego se crearan metodos para agregar votos
     //Fin setters 
     
     public String toString(){
         return "Nombre: " + nombre + ", Cedula: " + cedula +
-        ", Partido Politico: " + partido + ", Edad: " + edad +
+        ", Partido Politico con id: " + IdPartido + ", Edad: " + edad +
         ", Correo Electronico: " + correo + ", Nacionalidad: " + nacionalidad + 
         ", Cantidad votos: " + cantidadVotos;
     }

@@ -6,20 +6,26 @@ public class PartidoPolitico
     private String coloresBandera;
     private String presidenteEjecutivo;
     private String correoElectronico;
+    private int id;
     //Atributos necesarios de la clase
     
     public PartidoPolitico(String nombreDelPartido, int cedulaJuridica, String
-    presidenteEjecutivo, String correoElectronico, String coloresBandera){
+    presidenteEjecutivo, String correoElectronico, String coloresBandera, int id){
         this.nombrePartido = nombreDelPartido;
         this.cedulaJuridica = cedulaJuridica;
         this.coloresBandera = coloresBandera;
         this.presidenteEjecutivo = presidenteEjecutivo;
         this.correoElectronico = correoElectronico;  
+        this.id = id;
     } //Fin del constructor
     
     //Metodos getters
     public String getNombrePartido (){
         return nombrePartido;
+    }
+    
+    public int getId(){
+        return id;
     }
     
     public int getCedulaJuridica(){
@@ -58,7 +64,7 @@ public class PartidoPolitico
     //Fin metodos setters
     
     public String toString(){
-        return "Partido: " + nombrePartido + ", Cedula Juridica: " + cedulaJuridica +
+        return "Partido: " + nombrePartido + ", Cedula Juridica: " + cedulaJuridica + ", Id: " + id +
         ", Colores de la Bandera: " + coloresBandera + ", Presidente Ejecutivo: " + presidenteEjecutivo +
         ", Correo Electronico: " + correoElectronico;
     } //Metodo toString 

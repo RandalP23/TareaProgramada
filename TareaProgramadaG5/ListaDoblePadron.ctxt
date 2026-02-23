@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ListaDoblePadron
+comment1.params=dato
+comment1.target=void\ agregarCanton(Canton)
+comment2.params=nombre
+comment2.target=Canton\ buscarCanton(java.lang.String)
+comment3.params=
+comment3.target=void\ cargarVotantes()
+comment4.params=
+comment4.target=void\ agregarVotante()
+comment5.params=cedula
+comment5.target=Votante\ buscarVotante(int)
+numComments=6

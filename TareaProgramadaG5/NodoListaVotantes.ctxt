@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=NodoListaVotantes
+comment1.params=dato
+comment1.target=NodoListaVotantes(Votante)
+comment2.params=
+comment2.target=Votante\ getDato()
+numComments=3

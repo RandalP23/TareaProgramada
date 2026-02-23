@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=ArbolCandidatos
+comment1.params=
+comment1.target=void\ insertar()
+comment2.params=nodo\ nuevoCandidato
+comment2.target=NodoArbol\ insertarRec(NodoArbol,\ CandidatoPresidencial)
+comment3.params=nombre
+comment3.target=boolean\ sumarVoto(java.lang.String)
+comment4.params=nodo\ nombre
+comment4.target=boolean\ sumarVotoRec(NodoArbol,\ java.lang.String)
+comment5.params=
+comment5.target=CandidatoPresidencial\ obtenerGanador()
+comment6.params=nodo\ ganador
+comment6.target=CandidatoPresidencial\ obtenerGanadorRec(NodoArbol,\ CandidatoPresidencial)
+comment7.params=
+comment7.target=int\ contarTotalVotos()
+comment8.params=nodo
+comment8.target=int\ contarTotalVotosRec(NodoArbol)
+comment9.params=
+comment9.target=NodoArbol\ getRaiz()
+numComments=10

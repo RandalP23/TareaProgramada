@@ -5,7 +5,7 @@ public class Votante
     private String nombre;
     private int cedula;
     private int edad;
-    private String domicilioElectoral;
+    private String domicilioElectoral; //Debe de ser un canton
     private boolean emitioVoto;
     private String correo;
     
@@ -13,8 +13,8 @@ public class Votante
     
     //Atributos
     
-    public Votante(String nombre, int cedula, String domicilioElectoral,
-    int edad, String correo){
+    public Votante(String nombre, int cedula, int edad, String domicilioElectoral,
+    String correo){
         this.correo = correo;
         this.emitioVoto = false; //Pues en un inicio nadie ha votado
         this.edad = edad;

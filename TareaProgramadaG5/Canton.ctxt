@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Canton
+comment1.params=nombre
+comment1.target=Canton(java.lang.String)
+comment2.params=votante
+comment2.target=void\ agregarVotante(Votante)
+comment3.params=
+comment3.target=java.lang.String\ getNombre()
+comment4.params=cedula
+comment4.target=Votante\ buscarVotante(int)
+numComments=5
